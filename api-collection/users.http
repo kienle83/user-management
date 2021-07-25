@@ -1,0 +1,37 @@
+@baseUrl = https://jsonplaceholder.typicode.com
+
+Users
+
+# @name getAllUsers
+GET {{baseUrl}}/users
+//GET {{baseUrl}}/users?_page=1&_limit=3
+
+# @name getUserById
+GET {{baseUrl}}/users/id/2
+
+# @name addNewUser
+POST {{baseUrl}}/users
+
+Content-Type: application/json; charset=UTF-8
+{   
+    "name": "Fullname Test",
+    "username": "fullname_test",
+    "email": "fullname@fullname.de",
+    "address": {
+      "street": "Brühdermühlstr",
+      "suite": "Suite 16",
+      "city": "München",
+      "zipcode": "80364",
+      "geo": {
+        "lat": "-42.5255",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "089-05649-05446",
+    "website": "fullname.net",
+    "company": {
+      "name": "Nord Cloud",
+      "catchPhrase": "Services",
+      "bs": "Cloud"
+    }
+}

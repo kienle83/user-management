@@ -1,3 +1,24 @@
+# User Management Web App
+
+A simple web app that allows an admin to manage users.
+
+## Functions:
+- Fake login
+- Logout
+- Fetch user data from api
+- Show user list
+- Sort list
+- Search user by name using debounce
+
+## Todos:
+- Add new user
+- Edit user
+- Remove user
+
+# Run the app in the development mode
+1. Run `npm install` to install all neccessary node modules.
+1. Run `yarn start` to open the web app in the browser [http://localhost:3000](http://localhost:3000).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts

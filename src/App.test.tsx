@@ -3,13 +3,19 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
+import { ConnectedRouter } from 'connected-react-router';
+import { history } from './utils';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <App />
-    </Provider>
-  );
+describe('counter reducer', () => {
+  it('renders home page user management', () => {
+    const { getByText } = render(
+      <Provider store={store}>
+        <ConnectedRouter history={history}>
+          <App />
+        </ConnectedRouter>
+      </Provider>
+    );
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+    expect(getByText(/User Management/i)).toBeInTheDocument();
+  });
 });

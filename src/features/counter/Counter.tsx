@@ -10,6 +10,7 @@ import {
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
+import { incrementSaga, incrementSagaSuccess } from './counterSlice';
 
 export function Counter() {
   const count = useAppSelector(selectCount);
@@ -55,6 +56,12 @@ export function Counter() {
           onClick={() => dispatch(incrementAsync(incrementValue))}
         >
           Add Async
+        </button>
+        <button
+          className={styles.asyncButton}
+          onClick={() => dispatch(incrementSaga(incrementValue))}
+        >
+          Add Async Saga
         </button>
         <button
           className={styles.button}

@@ -17,5 +17,6 @@ describe('home page test', () => {
     );
 
     expect(getByText(/User Management/i)).toBeInTheDocument();
+    expect(getByText(/Click here to login/i).closest('button')).toBeTruthy();
   });
 });

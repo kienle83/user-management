@@ -19,6 +19,9 @@ A simple web app that allows an admin to manage users.
 1. Run `npm install` to install all neccessary node modules.
 1. Run `yarn start` to open the web app in the browser [http://localhost:3000](http://localhost:3000).
 
+# Demo link
+[Demo](https://user-management-three.vercel.app/)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts

@@ -5,7 +5,7 @@ import { dashboardActions } from "./dashboardSlice";
 
 function* fetchStatistics() {
     const data: User[] = yield call(userApi.getAll, {});
-    const totalRows = data.length; console.log(totalRows);
+    const totalRows = data.length;
     const [userCount, cityCount, companyCount] = [totalRows, totalRows, totalRows];
     yield put(
         dashboardActions.setStatistics({ userCount, cityCount, companyCount })

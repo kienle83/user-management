@@ -6,7 +6,7 @@ import App from './App';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from './utils';
 
-describe('counter reducer', () => {
+describe('home page test', () => {
   it('renders home page user management', () => {
     const { getByText } = render(
       <Provider store={store}>
